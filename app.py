@@ -4,8 +4,8 @@ from datetime import datetime, date, timedelta
 import re
 from flask_cors import CORS
 
-CORS(app)
 app = Flask(__name__)
+CORS(app)
 nlp = spacy.load("en_core_web_sm")  
 # Function to adjust time by -5.5 hours
 def adjust_time_by_offset(time_str, fmt="%I %p", offset_hours=-5, offset_minutes=-30):
