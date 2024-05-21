@@ -43,7 +43,7 @@ app.post('/query', async (req, res) => {
   const { query } = req.body;
   try {
     console.log(query);
-    const response = await axios.post('http://127.0.0.1:5001/translate', { query });
+    const response = await axios.post('https://employee-query-nlp-python.onrender.com/translate', { query });
     const sqlQuery = response.data.sql;
     if (response.data.error) {
       res.status(400).json({ error: response.data.error });
