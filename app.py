@@ -2,7 +2,9 @@ from flask import Flask, request, jsonify
 import spacy
 from datetime import datetime, date, timedelta
 import re
+from flask_cors import CORS
 
+CORS(app)
 app = Flask(__name__)
 nlp = spacy.load("en_core_web_sm")  
 # Function to adjust time by -5.5 hours
@@ -90,4 +92,4 @@ def translate_query():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(port=5001)
+    app.run(host='0.0.0.0', port=5001)
