@@ -1,7 +1,5 @@
 # Employee Query NLP Application
 
-## Assignment Details
-
 ### Objective
 
 Create a frontend-backend system with a Postgres database for employee data, a query interface for user inputs, NLP interpretation to generate SQL queries, execution and display of results, and deployment on a chosen server platform.
@@ -94,9 +92,4 @@ What is the average check-in time for employees?
 Give me a list of employees ordered by their check-out times.
 ```
 
-### Contact Information
-- Name: Kathan Dave
-- Email: kathanrdave003@gmail.com
-- Live [Link](https://employee-query-nlp.vercel.app/)
-- Organization: MeitY
-- Product: Karmayogi
+
